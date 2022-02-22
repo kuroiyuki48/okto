@@ -1,0 +1,1950 @@
+{
+	"info": {
+		"_postman_id": "25fccb0b-3075-4f40-a953-72f879e944de",
+		"name": "credences-mobileapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login Mitra",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-auth/login?username=fahrezam&password=iPErqjklCnFFJBEqGrFG&words=snuErMnzCnFFJBEqGrFG",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "fahrezam"
+						},
+						{
+							"key": "password",
+							"value": "iPErqjklCnFFJBEqGrFG"
+						},
+						{
+							"key": "words",
+							"value": "snuErMnzCnFFJBEqGrFG"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Mitra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "junaidi_arm",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hiPErqjkCnFFJBEq$._",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aditya.cahyaputra99@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "wHAnvqvmnEzCnFFJBEq$._",
+							"type": "text"
+						},
+						{
+							"key": "fullname",
+							"value": "Junaidi Armanda",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-auth/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profil Mitra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fullName",
+							"value": "Joko Chandra",
+							"type": "text"
+						},
+						{
+							"key": "nickName",
+							"value": "Joko",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081908761234",
+							"type": "text"
+						},
+						{
+							"key": "born",
+							"value": "112900000",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Laki-Laki",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rafifahrezaa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "PHOR",
+							"type": "text"
+						},
+						{
+							"key": "job",
+							"value": "worker",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jokochndr",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "idUser",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "12",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-auth/updateMyProfile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-auth",
+						"updateMyProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "rafimfahreza@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "104.131.97.129/api/mitra-auth/getOtp",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"mitra-auth",
+						"getOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Badan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/badan-auth/login?username=admin1&password=][PErq}{nqzvA$%^&words=nqzvA$nqzvA$%^",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"badan-auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin1"
+						},
+						{
+							"key": "password",
+							"value": "][PErq}{nqzvA$%^"
+						},
+						{
+							"key": "words",
+							"value": "nqzvA$nqzvA$%^"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Badan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namaKoperasi",
+							"value": "Koperasi Sejahtera",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "Bekasi Utara",
+							"type": "text"
+						},
+						{
+							"key": "tanggal",
+							"value": "21-07-2021",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rafigi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "iPErqjklCnFFJBEqGrFG$.a",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abc@test.com",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "EnsvtvCnFFJBEqGrFG$.a",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/badan-auth/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"badan-auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Badan By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/badan-detail/getDetailById?id=2&words=N6fyoEx6M85YL60_Dd!7@P9I5fKTPVFHH92r9X%23uK3a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"badan-detail",
+						"getDetailById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "words",
+							"value": "N6fyoEx6M85YL60_Dd!7@P9I5fKTPVFHH92r9X#uK3a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Koperasi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/badan-detail/getAll",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"badan-detail",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Proses Pengajuan Mitra",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getProsesPengajuan?id=5&words=!?j$%GL3B}$wx%26*kqs&phone=081908632739",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getProsesPengajuan"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						},
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx&*kqs"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cicilan Mitra",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getCicilan?id=5&words=N6fyoEx6M85YL60_Dd!7@P9I5fKTPVFHH92r9X%23uK3a&phone=081908765674",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getCicilan"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						},
+						{
+							"key": "words",
+							"value": "N6fyoEx6M85YL60_Dd!7@P9I5fKTPVFHH92r9X%23uK3a"
+						},
+						{
+							"key": "phone",
+							"value": "081908765674"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pilihan Koperasi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getPilihanKoperasi?mitraId=9&words=!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getPilihanKoperasi"
+					],
+					"query": [
+						{
+							"key": "mitraId",
+							"value": "9"
+						},
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pilihan Produk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getPilihanProduk?mitraId=5&badanId=2&words=!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getPilihanProduk"
+					],
+					"query": [
+						{
+							"key": "mitraId",
+							"value": "5"
+						},
+						{
+							"key": "badanId",
+							"value": "2"
+						},
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Cicilan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getDetailCicilan?idp=4&cicilan=1&words=!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getDetailCicilan"
+					],
+					"query": [
+						{
+							"key": "idp",
+							"value": "4"
+						},
+						{
+							"key": "cicilan",
+							"value": "1"
+						},
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Histori Mitra",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getHistori?mitraId=73&status=0&words=!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getHistori"
+					],
+					"query": [
+						{
+							"key": "mitraId",
+							"value": "73"
+						},
+						{
+							"key": "status",
+							"value": "0"
+						},
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tagihan Berjalan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/mitra-transaction/getTagihanBerjalan?idm=5&idp=4&phone=081908632739&words=!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"mitra-transaction",
+						"getTagihanBerjalan"
+					],
+					"query": [
+						{
+							"key": "idm",
+							"value": "5"
+						},
+						{
+							"key": "idp",
+							"value": "4"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739"
+						},
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pengajuan Mitra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "jenisBarang",
+							"value": "Gadget",
+							"type": "text"
+						},
+						{
+							"key": "detailBarang",
+							"value": "Infinix",
+							"type": "text"
+						},
+						{
+							"key": "jenisPengajuan",
+							"value": "Produktif",
+							"type": "text"
+						},
+						{
+							"key": "tujuanPenggunaan",
+							"value": "Ngajar Online",
+							"type": "text"
+						},
+						{
+							"key": "perkiraanHarga",
+							"value": "8000000",
+							"type": "text"
+						},
+						{
+							"key": "uangMuka",
+							"value": "2000000",
+							"type": "text"
+						},
+						{
+							"key": "waktuCicil",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "noID",
+							"value": "SIM",
+							"type": "text"
+						},
+						{
+							"key": "fotoID",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ref1",
+							"value": "Dini",
+							"type": "text"
+						},
+						{
+							"key": "noRef1",
+							"value": "081208983456",
+							"type": "text"
+						},
+						{
+							"key": "hubRef1",
+							"value": "Kerabat kerja",
+							"type": "text"
+						},
+						{
+							"key": "ref2",
+							"value": "Sohani",
+							"type": "text"
+						},
+						{
+							"key": "noRef2",
+							"value": "081908765634",
+							"type": "text"
+						},
+						{
+							"key": "hubRef2",
+							"value": "Grup WA",
+							"type": "text"
+						},
+						{
+							"key": "media",
+							"value": "Facebook",
+							"type": "text"
+						},
+						{
+							"key": "namaTeman",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "noHpTeman",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fbTeman",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "keterangan",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "anggotaSehati",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "selfie",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ttd",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mitraId",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "statusAju",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "tanggalAju",
+							"value": "16000001",
+							"type": "text"
+						},
+						{
+							"key": "kopId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "tenor",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "plafond",
+							"value": "3200000",
+							"type": "text"
+						},
+						{
+							"key": "grade",
+							"value": "B",
+							"type": "text"
+						},
+						{
+							"key": "rate",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "cicilan",
+							"value": "45000",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "hf$ghfda.eagc.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/usr/murabahah",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"usr",
+						"murabahah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Bukti Pembayaran Cicilan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idCicilan",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "buktiBayar",
+							"value": "1221232435",
+							"type": "text"
+						},
+						{
+							"key": "terbayar",
+							"value": "400000",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "ge$fgec_.d_f_",
+							"type": "text"
+						},
+						{
+							"key": "idMitra",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/usr/uploadCicilan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"usr",
+						"uploadCicilan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pengajuan Ready Screening",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://104.131.97.129/api/middle-sehati/badan/transaction/getListScreening?words=!?j$%GL3B}$wx%26*kqs&status=0",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"getListScreening"
+					],
+					"query": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx&*kqs"
+						},
+						{
+							"key": "status",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pilihan Surveor For Screening",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://104.131.97.129/api/middle-sehati/badan/transaction/getListOfSurveyor?words=!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"getListOfSurveyor"
+					],
+					"query": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Surveyor For Pengajuan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx&*kqs",
+							"type": "text"
+						},
+						{
+							"key": "idp",
+							"value": "9",
+							"type": "text"
+						},
+						{
+							"key": "surveyor_id",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/badan/transaction/updateSurveyorPengajuan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"updateSurveyorPengajuan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pengajuan Ready For Verification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/badan/transaction/getVerifikasiCicilan?words=!?j$%GL3B}$wx%26*kqs&id=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"getVerifikasiCicilan"
+					],
+					"query": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						},
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ger Pengajuan Ready For Verification with Keyword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/badan/transaction/getVerifikasiCicilanByKeyword?words=!?j$%GL3B}$wx%26*kqs&id=2&keyword=081908632739",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"getVerifikasiCicilanByKeyword"
+					],
+					"query": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						},
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "keyword",
+							"value": "081908632739"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verification And Update First Cicilan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx&*kqs",
+							"type": "text"
+						},
+						{
+							"key": "idCicilan",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "idm",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "idp",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "byr_n",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "bts_cicil",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "bts_bayar",
+							"value": "190001",
+							"type": "text"
+						},
+						{
+							"key": "jml_tgh",
+							"value": "167000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/badan/transaction/updateStatusAndMakeNew",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"updateStatusAndMakeNew"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Anggota Badan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/badan-detail/getAnggotaBadan?words=!?j$%GL3B}$wx%26*kqs&kopId=2&status=Investor",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"badan-detail",
+						"getAnggotaBadan"
+					],
+					"query": [
+						{
+							"key": "words",
+							"value": "!?j$%GL3B}$wx%26*kqs"
+						},
+						{
+							"key": "kopId",
+							"value": "2"
+						},
+						{
+							"key": "status",
+							"value": "Investor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pengajuan Ready To Survey",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/member/transaction/pengajuanReady?phone=081908765432&surveyor_id=12&words==_$-=_)(*%26^%!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"pengajuanReady"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "081908765432"
+						},
+						{
+							"key": "surveyor_id",
+							"value": "12"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_)(*&^%!?j$%GL3B}$wx&*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Proses Survey By Surveyor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idp",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "penjamin",
+							"value": "tono",
+							"type": "text"
+						},
+						{
+							"key": "pekerjaan",
+							"value": "swasta",
+							"type": "text"
+						},
+						{
+							"key": "status_rumah",
+							"value": "sewa",
+							"type": "text"
+						},
+						{
+							"key": "k_cicil",
+							"value": "1200000",
+							"type": "text"
+						},
+						{
+							"key": "cashflow",
+							"value": "200000",
+							"type": "text"
+						},
+						{
+							"key": "keuntungan",
+							"value": "3000000",
+							"type": "text"
+						},
+						{
+							"key": "cicilan_rutin",
+							"value": "150000",
+							"type": "text"
+						},
+						{
+							"key": "pengeluaran_rtn",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "jns_brg",
+							"value": "stnk",
+							"type": "text"
+						},
+						{
+							"key": "perkiraan_hrg",
+							"value": "12000000",
+							"type": "text"
+						},
+						{
+							"key": "sh_mitra",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "sh_penjamin",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "pernyataan",
+							"value": "test From Postman",
+							"type": "text"
+						},
+						{
+							"key": "ttd",
+							"value": "123213213",
+							"type": "text"
+						},
+						{
+							"key": "surveyor_id",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "on_date",
+							"value": "0000000",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_(^%)^-GBAB",
+							"type": "text"
+						},
+						{
+							"key": "pemasukan",
+							"value": "2800000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://104.131.97.129/api/middle-sehati/member/transaction/prosesSurvey",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"prosesSurvey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Surveyor History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/member/transaction/getAllHistori?surveyor_id=10&phone=081908632739&words==_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"getAllHistori"
+					],
+					"query": [
+						{
+							"key": "surveyor_id",
+							"value": "10"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Detail Surveyor History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/member/transaction/getDetailHistori?idm=5&idp=4&phone=081908632739&words==_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"getDetailHistori"
+					],
+					"query": [
+						{
+							"key": "idm",
+							"value": "5"
+						},
+						{
+							"key": "idp",
+							"value": "4"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pengajuan Ready To Invest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/member/transaction/investor/getReadyToInvest?phone=081908632739&words==_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs&idInvestor=13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"investor",
+						"getReadyToInvest"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "081908632739"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs"
+						},
+						{
+							"key": "idInvestor",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Detail Form For Investor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/member/transaction/investor/getDetailForm?idp=9&phone=081908632739&words==_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"investor",
+						"getDetailForm"
+					],
+					"query": [
+						{
+							"key": "idp",
+							"value": "9"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_(^%)^-!?j$%GL3B}$wx%26*kqs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Proses Invest For Investor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idp",
+							"value": "9\n\n",
+							"type": "text"
+						},
+						{
+							"key": "idm",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "byr_n",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "bts_cicil",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "bts_bayar",
+							"value": "180000000",
+							"type": "text"
+						},
+						{
+							"key": "jml_tgh",
+							"value": "157000",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "081908632739",
+							"type": "text"
+						},
+						{
+							"key": "words",
+							"value": "=_$-=_(^%)^-!?j$%GL3B}$wx&*kqs",
+							"type": "text"
+						},
+						{
+							"key": "id_investor",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "status_state",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/middle-sehati/member/transaction/investor/prosesInvestasi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"middle-sehati",
+						"member",
+						"transaction",
+						"investor",
+						"prosesInvestasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profil Badan Koperasi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namaKoperasi",
+							"value": "Koperasi Sehati",
+							"description": "diambil dari namaKoperasiTextField",
+							"type": "text"
+						},
+						{
+							"key": "lokasi",
+							"value": "Kranji",
+							"description": "diambil dari alamatKoperasiTextField+provinsi",
+							"type": "text"
+						},
+						{
+							"key": "latarBelakang",
+							"value": "Membangun masyarakat miskin",
+							"description": "diambil dari latbelTextField",
+							"type": "text"
+						},
+						{
+							"key": "visi",
+							"value": "membantu masyrakat",
+							"description": "diambil dari visiTextField",
+							"type": "text"
+						},
+						{
+							"key": "misi",
+							"value": "memberikan kemudahan masyrakat",
+							"description": "diambil dari misiTetField",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "credences.team@gmail.com",
+							"description": "diambil dari emailTextField",
+							"type": "text"
+						},
+						{
+							"key": "idKoperasi",
+							"value": "2",
+							"description": "id koperasi yg login",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://104.131.97.129/api/badan-auth/updateMyProfile",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"badan-auth",
+						"updateMyProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Member Koperasi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://104.131.97.129/api/badan-auth/login-member?username=NV9A0PAC&password=U_8X0RSY",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"badan-auth",
+						"login-member"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "NV9A0PAC",
+							"description": "Ini username hasil auto generate by admin koperasi"
+						},
+						{
+							"key": "password",
+							"value": "U_8X0RSY",
+							"description": "ini password setelah di enkripsi"
+						},
+						{
+							"key": "words",
+							"value": "19-N=3NPU_8X0RSY",
+							"description": "kombinasi username+password (tanpa embel2)",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Member By Badan Koperasi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namaLengkap",
+							"value": "Aldi",
+							"description": "Nama lengkap anggota",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "credences.team@gmail.com",
+							"description": "email anggota",
+							"type": "text"
+						},
+						{
+							"key": "posisi",
+							"value": "Surveyor",
+							"description": "Surveyor/Investor",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Tidak Aktif",
+							"description": "Aktif/Tidak Aktif",
+							"type": "text"
+						},
+						{
+							"key": "idKoperasi",
+							"value": "2",
+							"description": "id koperasi yang terlogin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://104.131.97.129/api/middle-sehati/badan/transaction/member",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Profil Member (Surveyor/Investor)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "35",
+							"description": "id member surveyor/investor",
+							"type": "text"
+						},
+						{
+							"key": "namaLengkap",
+							"value": "Handika",
+							"type": "text"
+						},
+						{
+							"key": "namaPanggilan",
+							"value": "Dika",
+							"type": "text"
+						},
+						{
+							"key": "noHp",
+							"value": "081908776543",
+							"type": "text"
+						},
+						{
+							"key": "tanggalLahir",
+							"value": "900011",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Pria",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@abc.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "PHR",
+							"type": "text"
+						},
+						{
+							"key": "pekerjaan",
+							"value": "HRD",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "handhika45",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"value": "iasauuu1212",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://104.131.97.129/api/middle-sehati/badan/transaction/update-member",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"middle-sehati",
+						"badan",
+						"transaction",
+						"update-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Dependet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "duration",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "23465",
+							"type": "text"
+						},
+						{
+							"key": "existing1",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "existing2",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "existing3",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://104.131.97.129/api/transaction/check-dependent",
+					"protocol": "http",
+					"host": [
+						"104",
+						"131",
+						"97",
+						"129"
+					],
+					"path": [
+						"api",
+						"transaction",
+						"check-dependent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
